@@ -1,6 +1,7 @@
 ## 📝 Proje Hakkında
 Heap Sort Web Uygulama, veri sıralama algoritmalarından Heap Sort'un nasıl çalıştığını göstermek için tasarlanmış interaktif bir Flutter web uygulamasıdır. Bu uygulama, Heap Sort algoritmasının çalışma prensiplerini adım adım görselleştirerek, algoritma öğrenen öğrenciler ve eğitimciler için mükemmel bir araçtır.
-🚀 Özellikler
+
+## 🚀 Özellikler
 
 🔢 Özel Veri Girişi: Kendi veri setinizi virgül veya boşlukla ayırarak girebilirsiniz
 🔍 Adım Adım Görselleştirme: Algoritmanın her adımını detaylı açıklamalarla görebilirsiniz
