@@ -1,120 +1,38 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html>
 <head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/HeapSortWebUygulama/">
+ <meta name="theme-color" content="#2196f3">
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Emre Öztemiz tarafından repoyu çatallayan herkese bir hediye.">
 
-  <title>Heap Sort Web Uygulaması</title>
-  <meta name="description" content="Heap Sort algoritmasını Flutter Web ile görselleştiren uygulama.">
-  <meta name="keywords" content="Heap Sort, Flutter Web, Algoritma, Görselleştirme, Sıralama">
-  <meta name="author" content="Emre Öztemiz">
-
-  <!-- Open Graph Meta (sosyal medya paylaşımı için) -->
-  <meta property="og:title" content="Heap Sort Web Uygulaması">
-  <meta property="og:description" content="Sıralama algoritmasını Flutter Web ile görselleştir.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://emreoztemiz-ai-ml.github.io/HeapSortWebUygulama/">
-  <meta property="og:image" content="icons/Icon-512.png">
-
-  <!-- Tema Renkleri -->
-  <meta name="theme-color" content="#2196f3">
-
-  <!-- Base href -->
-  <base href="/HeapSortWebUygulama/">
-
-  <!-- iOS & PWA -->
+  <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Heap Sort Web">
-  <link rel="apple-touch-icon" sizes="192x192" href="icons/Icon-192.png">
-  <link rel="apple-touch-icon" sizes="512x512" href="icons/Icon-512.png">
-  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="heap_sort_app">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="https://emreoztemiz-ai-ml.blogspot.com/favicon.ico"/>
 
-  <!-- Performans için preconnect -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- Tema algılaması için CSS -->
-  <style>
-    :root {
-      color-scheme: light dark;
-    }
-
-    body {
-      margin: 0;
-      font-family: system-ui, sans-serif;
-      background-color: white;
-      color: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      body {
-        background-color: #121212;
-        color: #ffffff;
-      }
-
-      .loader .spinner {
-        border-top: 6px solid #90caf9;
-      }
-    }
-
-    .loader {
-      text-align: center;
-    }
-
-    .spinner {
-      margin: auto;
-      border: 6px solid #f3f3f3;
-      border-top: 6px solid #2196f3;
-      border-radius: 50%;
-      width: 48px;
-      height: 48px;
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-  </style>
-
-  <!-- Güvenlik (XSS koruması) -->
-  
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://www.gstatic.com https://emreoztemiz-ai-ml.blogspot.com; script-src 'self' 'unsafe-inline' https://www.gstatic.com;
-  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://emreoztemiz-ai-ml.blogspot.com; connect-src 'self' https://fonts.gstatic.com https://www.gstatic.com;
-  worker-src 'self'; child-src 'self'; object-src 'none';">
-
+  <title>heap_sort_app</title>
+  <link rel="manifest" href="manifest.json">
 </head>
-
 <body>
-  <div class="loader">
-    <div class="spinner"></div>
-    <p>Uygulama yükleniyor... <span id="loadingPercent">0%</span></p>
-  </div>
-
   <script src="flutter_bootstrap.js" async></script>
-  <script>
-  const spinnerText = document.getElementById("loadingPercent");
-  let percent = 0;
-  const interval = setInterval(() => {
-    if (percent < 90) {
-      percent += 3;
-      spinnerText.innerText = percent + "%";
-    }
-  }, 100);
-
-  window.addEventListener("load", () => {
-    clearInterval(interval);
-    spinnerText.innerText = "100%";
-    // Gerekirse loader'ı gizle:
-    document.querySelector(".loader").style.display = "none";
-  });
-</script>
 </body>
 </html>
