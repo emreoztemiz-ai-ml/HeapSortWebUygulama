@@ -98,17 +98,23 @@
     <p>Uygulama yükleniyor... <span id="loadingPercent">0%</span></p>
   </div>
 
-  <script>
-    // Basit loading animasyonu
-    const spinnerText = document.getElementById("loadingPercent");
-    let percent = 0;
-    const interval = setInterval(() => {
-      percent += 5;
-      spinnerText.innerText = percent + "%";
-      if (percent >= 95) clearInterval(interval);
-    }, 100);
-  </script>
-
   <script src="flutter_bootstrap.js" async></script>
+  <script>
+  const spinnerText = document.getElementById("loadingPercent");
+  let percent = 0;
+  const interval = setInterval(() => {
+    if (percent < 90) {
+      percent += 3;
+      spinnerText.innerText = percent + "%";
+    }
+  }, 100);
+
+  window.addEventListener("load", () => {
+    clearInterval(interval);
+    spinnerText.innerText = "100%";
+    // Gerekirse loader'ı gizle:
+    document.querySelector(".loader").style.display = "none";
+  });
+</script>
 </body>
 </html>
