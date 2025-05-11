@@ -1,70 +1,59 @@
-## 📝 Proje Hakkında
-Heap Sort Web Uygulama, veri sıralama algoritmalarından Heap Sort'un nasıl çalıştığını göstermek için tasarlanmış interaktif bir Flutter web uygulamasıdır. Bu uygulama, Heap Sort algoritmasının çalışma prensiplerini adım adım görselleştirerek, algoritma öğrenen öğrenciler ve eğitimciler için mükemmel bir araçtır.
 
-## 🚀 Özellikler
+## Şimdi test edebilirsiniz.
+🔗 [Uygulamayı Aç](https://emreoztemiz-ai-ml.github.io/HeapSortWebUygulama/)  
 
-🔢 Özel Veri Girişi: Kendi veri setinizi virgül veya boşlukla ayırarak girebilirsiniz
-🔍 Adım Adım Görselleştirme: Algoritmanın her adımını detaylı açıklamalarla görebilirsiniz
-⏪ ⏩ İleri-Geri Kontrolleri: Algoritma adımları arasında gezinebilirsiniz
-🔄 Sıfırlama: Verileri başlangıç durumuna döndürebilirsiniz
-📱 Responsive Tasarım: Masaüstü ve mobil cihazlarda sorunsuz çalışır
+# 🔢 HeapSort Görselleştirme Web Uygulaması
 
-## 🧮 Heap Sort Algoritması Nedir?
-Heap Sort, verileri bir heap veri yapısına dönüştürerek sıralayan karşılaştırma tabanlı bir sıralama algoritmasıdır. Algoritma iki ana adımdan oluşur:
+![Flutter Web](https://img.shields.io/badge/Flutter-Web-blue?logo=flutter)
+![Durum](https://img.shields.io/badge/Durum-Yayında-brightgreen)
 
-Heapify: Diziyi bir max-heap (veya min-heap) yapısına dönüştürme
-Extraction: En büyük elemanı (kök) alıp sıralanmış kısmın başına yerleştirme ve heap'i yeniden düzenleme
+Bu proje, **Heap Sort algoritmasını** web üzerinden interaktif ve görsel bir biçimde keşfetmenizi sağlar. Eğitim amaçlıdır ve hem masaüstü hem de mobil uyumludur.
 
-Algoritmanın zaman karmaşıklığı her durumda O(n log n)'dir ve in-place bir algoritma olduğundan ek bellek kullanımı minimum seviyededir.
+## 🚀 Canlı demo
+🔗 [Uygulamayı Aç](https://emreoztemiz-ai-ml.github.io/HeapSortWebUygulama/)  
 
-## 📝 Proje Hakkında
-Heap Sort Web Uygulaması, veri sıralama algoritmalarından Heap Sort'un nasıl çalıştığını göstermek için tasarlanmış interaktif bir Flutter web uygulamasıdır. Bu uygulama, Heap Sort algoritmasının çalışma prensiplerini adım adım görselleştirerek, algoritma öğrenen öğrenciler ve eğitimciler için mükemmel bir araçtır.
+📁 [Proje Reposu](https://github.com/emreoztemiz-ai-ml/HeapSortWebUygulama)
 
-## 🚀 Özellikler
+## 🎥 Tanıtım videoları
 
-🔢 Özel Veri Girişi: Kendi veri setinizi virgül veya boşlukla ayırarak girebilirsiniz
-🔍 Adım Adım Görselleştirme: Algoritmanın her adımını detaylı açıklamalarla görebilirsiniz
-⏪ ⏩ İleri-Geri Kontrolleri: Algoritma adımları arasında gezinebilirsiniz
-🔄 Sıfırlama: Verileri başlangıç durumuna döndürebilirsiniz
-📱 Responsive Tasarım: Masaüstü ve mobil cihazlarda sorunsuz çalışır
+<details>
+  <summary>💻 Masaüstü Görünümü</summary>
 
-## 🧮 Heap Sort Algoritması Nedir?
-Heap Sort, verileri bir heap veri yapısına dönüştürerek sıralayan karşılaştırma tabanlı bir sıralama algoritmasıdır. Algoritma iki ana adımdan oluşur:
+  [💻](https://github.com/user-attachments/assets/5836de45-186f-4ed8-a511-7c105771ba99)
 
-Heapify: Diziyi bir max-heap (veya min-heap) yapısına dönüştürme
-Extraction: En büyük elemanı (kök) alıp sıralanmış kısmın başına yerleştirme ve heap'i yeniden düzenleme
+</details>
 
-Algoritmanın zaman karmaşıklığı her durumda O(n log n)'dir ve in-place bir algoritma olduğundan ek bellek kullanımı minimum seviyededir.
+<details>
+  <summary>📱 Mobil Görünüm</summary>
 
-## 🛠️ Kurulum
-Yerel Geliştirme İçin
+  [📱](https://github.com/user-attachments/assets/fc829541-12ae-4c63-8c2a-7286ef23f353)
 
-Flutter SDK'yı yükleyin (https://flutter.dev/docs/get-started/install)
-Bu repo'yu klonlayın:
-bash
-git clone https://github.com/username/heap-sort-app.git
-cd heap-sort-app
+</details>
 
-Bağımlılıkları yükleyin:
-bash
+
+## ⚙️ Özellikler
+
+- 🔄 Gerçek zamanlı sıralama animasyonu
+- 🌗 Karanlık / Aydınlık tema desteği
+- 📱 Mobil uyumlu yapı
+- 🧠 Eğitim dostu görsel algoritma anlatımı
+
+## 🛠️ Kullanılan teknolojiler
+
+- [Flutter Web](https://flutter.dev/web)
+- Dart
+- GitHub Pages ile deployment
+
+## 🧪 Uygulamayı lokal olarak çalıştırma
+
+```bash
+git clone https://github.com/emreoztemiz-ai-ml/HeapSortWebUygulama.git
+cd HeapSortWebUygulama
 flutter pub get
-
-Uygulamayı çalıştırın:
-bash
 flutter run -d chrome
-
-## 🧩 Kod Yapısı
-lib/
-├── main.dart     # Ana uygulama ve UI bileşenleri
-🤝 Katkıda Bulunma
-
- ## Bu repo'yu fork edin
-Yeni bir branch oluşturun (git checkout -b feature/amazing-feature)
-Değişikliklerinizi commit edin (git commit -m 'Add some amazing feature')
-Branch'inize push edin (git push origin feature/amazing-feature)
-Pull Request açın
-
+```
 ## 📄 Lisans
 Bu proje MIT Lisansı altında lisanslanmıştır - detaylar için LICENSE dosyasına bakın.
-## ⭐  Projeyi Beğendiniz mi?
-Eğer bu proje size yardımcı olduysa, ⭐️ vermeyi unutmayın!
+## ⭐  Projeyi beğendiniz mi?
+Eğer bu proje size yardımcı olduysa, ⭐️ vermeyi unutmayın! Teşekkürler.
+Problem yaşarsanız sorununuzu Github' ta çekme isteği açarak belirtebilirsiniz.
